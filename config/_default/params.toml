@@ -26,7 +26,7 @@ search = true # (if Search is disable/false Menu will align in Right)
 image_gallery = true
 # copyright
 theme_copyright = true
-copyright = "&copy; Copyright by Bookworm"
+copyright = "&copy; Copyright by JJuice"
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
@@ -80,7 +80,7 @@ enableQQ = false # https://valine.js.org/en/configuration.html#enableQQ
 [metadata]
 keywords = ["Boilerplate", "Hugo", "Themefisher", "GetHugoThemes"]
 description = "This is meta description"
-author = "Themefisher"
+author = "JJuice"
 image = "images/favicon.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/

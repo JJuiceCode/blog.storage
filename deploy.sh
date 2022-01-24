@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="rebuilding site `date`"
+msg="로고 변경/첫 블로그-typora추가/기존 이미지들 삭제 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="rebuilding site `date`"
+msg="로고 변경/첫 블로그-typora추가/기존 이미지들 삭제 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi

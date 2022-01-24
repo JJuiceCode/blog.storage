@@ -43,8 +43,8 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
+URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -84,32 +84,32 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 #### Notice
 
 {{< notice "note" >}}
-  This is a simple note.
+This is a simple note.
 {{< /notice >}}
 
 {{< notice "tip" >}}
-  This is a simple tip.
+This is a simple tip.
 {{< /notice >}}
 
 {{< notice "info" >}}
-  This is a simple info.
+This is a simple info.
 {{< /notice >}}
 
 #### Tab
 
 {{< tabs >}}
 
-  {{< tab "first" >}}
-   This is first tab
-  {{< /tab >}}
+{{< tab "first" >}}
+This is first tab
+{{< /tab >}}
 
-  {{< tab "second" >}}
-  this is second tab
-  {{< /tab >}}
+{{< tab "second" >}}
+this is second tab
+{{< /tab >}}
 
-  {{< tab "third" >}}
-  this is third tab
-  {{< /tab >}}
+{{< tab "third" >}}
+this is third tab
+{{< /tab >}}
 
 {{</ tabs >}}
 
@@ -118,15 +118,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 ### Collapse
 
 {{< collapse "collapse 1" >}}
-  This is a simple collapse
+This is a simple collapse
 {{< /collapse >}}
 
 {{< collapse "collapse 2" >}}
-  This is a simple collapse
+This is a simple collapse
 {{< /collapse >}}
 
 {{< collapse "collapse 3" >}}
-  This is a simple collapse
+This is a simple collapse
 {{< /collapse >}}
 
 <hr>
@@ -139,7 +139,7 @@ Inline `code` has `back-ticks around` it.
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
@@ -179,7 +179,7 @@ Colons can be used to align columns.
 | zebra stripes | are neat      |    $1 |
 
 There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
+The outer pipes (|) are optional, and you don't need to make the
 raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
@@ -192,13 +192,13 @@ Markdown | Less | Pretty
 
 ##### Image
 
-[//]: # ({{< image src="images/post/02.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid w-100" title="image title"  webp="false" >}})
+{{< image src="images/post/02.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid w-100" title="image title"  webp="false" >}}
 
 <hr>
 
 ### Gallery
 
-[//]: # ({{< gallery dir="images/post" class="" height="400" width="400" webp="true" command="Fit" options="" zoomable="true" >}})
+{{< gallery dir="images/post" class="" height="400" width="400" webp="true" command="Fit" options="" zoomable="true" >}}
 
 <hr>
 

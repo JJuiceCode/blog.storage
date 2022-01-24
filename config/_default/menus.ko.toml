@@ -4,7 +4,7 @@
 [[main]]
 weight = 1
 url = "/"
-name = "Home1"
+name = "홈"
 hasChildren = true
 
   [[main]]
@@ -21,18 +21,18 @@ hasChildren = true
   
 [[main]]
 weight = 3
-url = "about/"
+url = "어바웃/"
 name = "About"
   
 [[main]]
 weight = 4
-url = "contact/"
+url = "콘택트/"
 name = "Contact"
 
 [[main]]
 weight = 5
 url = "#"
-name = "Pages"
+name = "페이지들"
 hasChildren = true
 
   [[main]]
@@ -75,17 +75,17 @@ hasChildren = true
 [[footer]]
 weight = 1
 url = "about/"
-name = "About"
+name = "어바웃"
 
 [[footer]]
 weight = 2
 url = "author/"
-name = "Authors"
+name = "사용자"
 
 [[footer]]
 weight = 3
 url = "privacy/"
-name = "Privacy"
+name = "정책"
 
 [[footer]]
 weight = 4
