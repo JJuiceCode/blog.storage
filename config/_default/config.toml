@@ -68,3 +68,10 @@ suffixes = [""]
 [outputFormats.WebAppManifest]
 mediaType = "application/manifest+json"
 rel = "manifest"
+
+
+##### Table of Contents #######
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2

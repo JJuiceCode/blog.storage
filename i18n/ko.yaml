@@ -44,13 +44,16 @@
   translation: Home
 
 - id: search
-  translation: Search
+  translation: search
 
 - id: categories
-  translation: Categories
+  translation: 카테고리
 
 - id: tags
-  translation: Tags
+  translation: 태그
+
+- id: toc
+  translation: 목차
 
 - id: social
   translation: Social

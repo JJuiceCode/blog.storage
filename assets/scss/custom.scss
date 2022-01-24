@@ -1,0 +1,39 @@
+// 상세페이지 > 우측 side > table of content
+
+.widget-toc {
+  .widget-title {
+    margin-bottom: 5px;
+  }
+  @include desktop {
+    display: none;
+  }
+
+  #TableOfContents {
+    ul {
+      list-style: none;
+      border-left : 3px solid #019d9f;
+      padding-left: 8px;
+      > li {
+        > ul {
+          margin-left: 15px;
+          border-left : none;
+
+          > li {
+            a {
+              font-size: .9rem;
+              color: #adadad;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #91EEAB;
+  background : #38373A;
+}

@@ -1,14 +1,12 @@
 ---
-title: "Typora 이미지 자동 업로드 (mac 환경)"
-date: 2022-01-24T11:22:05+09:00
-images:
-- "images/blogthumb_typora_main.png"
+title : "Typora 이미지 자동 업로드 (mac 환경)"
+description : "uPic & github을 이용한 typora 이미지 자동 업로드 방법 알아보기"
+author : "JJuice"
+images : ["/images/blogthumb_typora_main.png"]
+tags : ["타이포라 ", "github", "uPic", "이미지업로드", "typora"]
+categories : ["Tool"]
 draft: false
-author: "JJuice"
-tags: ["typora","macos","타이포라","자동업로드","이미지업로드","uPic"]
-categories: ["Tools"]
 ---
-
 # 시작하기에 앞서..
 
 2022년부터는 제대로 된 나만의 블로그를 만들어서 FrontEnd와 관련 된 개발 이야기/나의 생각들과 좋아하는 것들을 다이어리 처럼 기록해 보고 싶었다.  그래서 블로그 생성을 위해 구글링을 하게 되었고 그 결과 Hugo + Netlify + Foresty을 활용해 기본 블로그를 세팅한 후 포스트를 올리기 위한 마크다운 편집기가 필요했다.
@@ -132,14 +130,13 @@ $brew install bigwig-club/brew/upic --cask
 **★ 우측 설정창 내용 추가하기**
 
 - 현재 제가 github에서 사용하는 이미지 저장소 repository 스샷을 참고해서 **uPic 설정창에는 본인의 Repository 내용을 적용해주자.**
-
-- - 저는 blog.image.server Repository에 루트에서  2022 이름의 폴더를 생성하고 그 안에 이미지 저장 세팅을 할려고 했습니다.
+  - 저는 blog.image.server Repository에 루트에서  2022 이름의 폴더를 생성하고 그 안에 이미지 저장 세팅을 할려고 했습니다.
 
 ![image-20220123190242078](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220123190242078.png)
 
 1. uPic 설정창 관련 내용 입력
 
-2. - `Owner : JJuiceCode`
+- `Owner : JJuiceCode`
 
 - `Repo : blog.image.server`
 
@@ -151,15 +148,19 @@ $brew install bigwig-club/brew/upic --cask
 
 - `save key : 2022/{year}_{month}_{day}_{random}{.suffix}`
 
-- - repository 루트 경로가 아닌 저와 같이 2022라는 하위 폴더에 저장을 하고 싶다면 위에 내용처럼 폴더명을 표시해줘야 합니다.
-- 원래는 {hour}{minute}{second}도 추가해주었지만 우리가 실제 사용하는 시간내용이 아닌 타임스탬프 내용처럼 나와 삭제했습니다.
-- 저는 대부분의 이미지가 선택영역 스샷으로 이미지를 가져오는 편이라 {filename}을 추가하면 이미지 네이밍이 너무 길어져서 날짜 시간 정보와 random 자동 파일명을 지정해 주었습니다.
+  - repository 루트 경로가 아닌 저와 같이 2022라는 하위 폴더에 저장을 하고 싶다면 위에 내용처럼 폴더명을 표시해줘야 합니다.
 
-3. 내용 입력 완료 후 validate 버튼 누른 후 save 하기
+  - 원래는 {hour}{minute}{second}도 추가해주었지만 우리가 실제 사용하는 시간내용이 아닌 타임스탬프 내용처럼 나와 삭제했습니다.
+
+  - 저는 대부분의 이미지가 선택영역 스샷으로 이미지를 가져오는 편이라 {filename}을 추가하면 이미지 네이밍이 너무 길어져서 날짜 시간 정보와 random 자동 파일명을 지정해 주었습니다.
 
 
 
-## 설정 완료 후 확인해보기
+2. 내용 입력 완료 후 validate 버튼 누른 후 save 하기
+
+
+
+## 6.설정 완료 후 확인해보기
 
 ### typora에서 확인
 
@@ -167,7 +168,7 @@ typora 설정 > 이미지 >  Image upload setting 창에서 'Test Uploader' 버�
 
 ![image-20220123190516757](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220123190516757.png)
 
-## typora에 스샷 이미지 후 붙여넣기 해보기
+## 7.typora에 이미지 붙여넣기
 
 - uPic프로그램으로(메뉴막대에 활성화되어있다면) 'upload from screenshot' 클릭 후 선택영역을 스샷 하면 자동으로 github 저장소에 이미지가 업로드가 된 후 그 상태로 바로 typora에 `ctrl + v`  를 누르면 업로드 된 이미지가 붙여넣기가 됩니다.( 이미지가 복사할때 한 번, 붙여넣기 할때 두 번 이렇게 중첩되서 총 2개의 이미지가 업로드 되지 않는다. 스샷하는 순간 업로드 되고 복사할때는 업로드 되어 스샤 한번에 딱 하나의 이미지만 업로드 된다.)
 - 저 같은 경우 스샷은 대부분 에버노트를 활용하기 때문에 에버노트 스샷 후 `ctrl + v` 붙여넣기로도 아래와 같이 typora에서 github 저장소에 이미지를 업로드 한다. (참고로 에버노트 스샷을 활용한다고 하면 활성화 되어있는 uPic 프로그램을 OFF 해도 에버노트 스샷 > typora 붙여넣기 > 자동 업로드 기능은 문제없이 사용가능)
