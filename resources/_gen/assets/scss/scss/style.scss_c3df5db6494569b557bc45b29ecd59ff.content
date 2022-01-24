@@ -8456,7 +8456,7 @@ iframe.wait-autoplay {
       color: #adadad; }
 
 code {
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 4px;
   color: #91EEAB;
   background: #38373A; }

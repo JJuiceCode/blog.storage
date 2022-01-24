@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="기본 세팅 완료 `date`"
+msg="기본 세팅 진짜 완료 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="기본 세팅 완료 `date`"
+msg="기본 세팅 진짜 완료 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
