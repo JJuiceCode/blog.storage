@@ -7458,17 +7458,14 @@ header {
   left: 0;
   z-index: 1000;
   background-color: #fff;
-  padding: 50px 0 20px;
+  padding: 30px 0 30px;
   transition: .25s ease; }
   @media (max-width: 767px) {
     header {
-      padding: 40px 0; } }
+      padding: 20px 0; } }
   header.header-sticky-top {
-    box-shadow: 0 0 50px -30px rgba(1, 173, 159, 0.5);
-    padding: 20px 0; }
-  @media (max-width: 767px) {
-    header .navbar-brand img {
-      height: 30px; } }
+    box-shadow: 0 0 50px -30px rgba(1, 173, 159, 0.7);
+    padding: 10px 0; }
   header .nav-item.active .nav-link {
     color: #01AD9F !important; }
   header .nav-item.dropdown .nav-link {
@@ -7519,6 +7516,8 @@ header {
       visibility: visible;
       box-shadow: 0 10px 30px rgba(22, 28, 45, 0.1);
       transform: translate(-50%, -6px); }
+    header .navbar-right {
+      margin-top: 10px; }
     header .dropdown-menu[data-bs-popper] {
       top: 100%;
       left: 50%;
@@ -7562,7 +7561,7 @@ header {
     header .navbar-right {
       text-align: center;
       margin-top: 20px;
-      padding-bottom: 30px; }
+      padding-bottom: 20px; }
     header .dropdown-menu {
       padding: 5px;
       text-align: center;
