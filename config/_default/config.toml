@@ -17,6 +17,11 @@ defaultContentLanguage = "ko"
 disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
+
+### Permalinks ####
+[permalinks]
+blog = '/:filename/'
+
 ############################# Modules ##############################
 [module]
 [module.hugoVersion]
@@ -31,7 +36,7 @@ home = ["HTML", "RSS", "JSON", "WebAppManifest"]
 [imaging]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
-quality = 90
+quality = 100
 
 ############################# Caches ###############################
 [caches]

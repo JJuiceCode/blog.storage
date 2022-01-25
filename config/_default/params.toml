@@ -5,7 +5,7 @@ favicon = "images/favicon.png"
 logo = "images/logo.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "300px"
+logo_width = "270px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
@@ -14,7 +14,7 @@ logo_text = "Bookworm"
 # Menu align
 menu_align = "center" # Menu-align value "left", "right" or "center" (if Search is disable/false Menu will align in Right)
 # Main section
-mainSections = ["blog"]
+mainSections = ["blog","tool"]
 # Post layout
 post_layout = "list" # Post-Layout value ("grid" or "list")
 # Blog-details page sidebar
@@ -48,7 +48,7 @@ access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1Nmpx
 
 # Subscription
 [subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours

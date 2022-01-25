@@ -1,11 +1,10 @@
-############# English navigation ##############
+############# Korea navigation ##############
 
 # main menu
 [[main]]
 weight = 1
 url = "/"
 name = "Home"
-hasChildren = true
 
   
 [[main]]
@@ -34,17 +33,17 @@ name = "Category"
 [[footer]]
 weight = 1
 url = "about/"
-name = "어바웃"
+name = "about"
 
 [[footer]]
 weight = 2
 url = "author/"
-name = "사용자"
+name = "author"
 
 [[footer]]
 weight = 3
 url = "privacy/"
-name = "정책"
+name = "privacy"
 
 [[footer]]
 weight = 4

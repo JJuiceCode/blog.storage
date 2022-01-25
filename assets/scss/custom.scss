@@ -37,3 +37,10 @@ code {
   color: #91EEAB;
   background : #38373A;
 }
+
+.jjuice-responsive-width {
+ @include mobile-xs {
+   width: 190px;
+   height: auto;
+ }
+}
