@@ -8,24 +8,34 @@ name = "Home"
 
   
 [[main]]
+weight = 2
+url = "/blog/study"
+name = "Study"
+
+[[main]]
 weight = 3
-url = "about/"
-name = "About"
-  
+url = "/blog/sideproject"
+name = "SideProject"
+
 [[main]]
 weight = 4
-url = "contact/"
-name = "Contact"
-
+url = "/blog/favorite"
+name = "Favorite"
+  
 [[main]]
 weight = 5
-url = "tags/"
-name = "Tags"
-
+url = "/blog/tool"
+name = "Tool-Tip"
+#
 [[main]]
 weight = 6
-url = "categories/"
-name = "Category"
+url = "tags/"
+name = "Tags"
+#
+#[[main]]
+#weight = 6
+#url = "categories/"
+#name = "Category"
 
 
 
