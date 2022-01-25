@@ -18,9 +18,15 @@ disableLanguages = [] # example: ["fr"] for disable french language. see https:/
 hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 
+### taxonomy ###
+[taxonomies]
+ category = "categories"
+ tag = "tags"
+ subcategory = "subcategories"
+
 ### Permalinks ####
 [permalinks]
-blog = '/:filename/'
+
 
 ############################# Modules ##############################
 [module]

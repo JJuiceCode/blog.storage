@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="모바일 화면 index.html에 테스트로 넣은 'px-5'삭제 `date`"
+msg="카테고리 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="모바일 화면 index.html에 테스트로 넣은 'px-5'삭제 `date`"
+msg="카테고리 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi

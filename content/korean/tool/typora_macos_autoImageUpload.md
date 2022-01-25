@@ -4,7 +4,7 @@ description : "uPic & github을 이용한 typora 이미지 자동 업로드 방�
 author : "JJuice"
 images : ["/images/thumb/2022/blogthumb_typora_main.png"]
 tags : ["github", "uPic", "typora"]
-categories : ["Tool-Tip"]
+categories : ["tool"]
 date: 2022-01-24 
 draft: false
 ---

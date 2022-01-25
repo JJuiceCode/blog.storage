@@ -4,7 +4,7 @@ description : "PHPStorm 프로젝트내 검색할때 특정 폴더 제외하고 
 author : "JJuice"
 images : ["/images/thumb/2022/thumb-tool_phpstorm_exclusion_folder.png"]
 tags : ["phpstorm", "setting"]
-categories : ["Tool-Tip"]
+categories : ["tool"]
 date: 2022-01-25
 draft: false
 ---
