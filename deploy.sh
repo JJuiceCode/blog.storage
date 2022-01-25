@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="상세페이지 px-5 삭제 `date`"
+msg="blog > tool 폴더 경로 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="상세페이지 px-5 삭제 `date`"
+msg="blog > tool 폴더 경로 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
