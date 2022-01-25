@@ -1,36 +1,31 @@
 ############# Korea navigation ##############
 
 # main menu
+
 [[main]]
 weight = 1
-url = "/"
-name = "Home"
+url = "/blog/study"
+name = "학습"
 
-  
 [[main]]
 weight = 2
-url = "/blog/study"
-name = "Study"
+url = "/blog/sideproject"
+name = "프로젝트"
 
 [[main]]
 weight = 3
-url = "/blog/sideproject"
-name = "SideProject"
-
-[[main]]
-weight = 4
 url = "/blog/favorite"
-name = "Favorite"
+name = "좋아하는"
   
 [[main]]
-weight = 5
+weight = 4
 url = "/blog/tool"
-name = "Tool-Tip"
+name = "툴팁"
 #
 [[main]]
-weight = 6
+weight = 5
 url = "tags/"
-name = "Tags"
+name = "태그"
 #
 #[[main]]
 #weight = 6
