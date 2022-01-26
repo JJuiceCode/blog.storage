@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="블로그 기본 세팅 수정 사항 완료 `date`"
+msg="root _index.md title descrpition 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="블로그 기본 세팅 수정 사항 완료 `date`"
+msg="root _index.md title descrpition 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
