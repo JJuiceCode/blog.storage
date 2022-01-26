@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="params data 수정 `date`"
+msg="PHPStorm & Webstorm에서 특정 폴더 검색 제외하기-내용 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="params data 수정 `date`"
+msg="PHPStorm & Webstorm에서 특정 폴더 검색 제외하기-내용 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi

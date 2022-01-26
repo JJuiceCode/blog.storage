@@ -1,10 +1,10 @@
 ---
-title : "PHPStorm & Webstorm에서 특정 폴더 검색 제외하기2"
+title : "PHPStorm & Webstorm에서 특정 폴더 검색 제외하기"
 description : "PHPStorm 프로젝트내 검색할때 특정 폴더 제외하고 검색결과 확인하는 방법 알아보기"
 author : "JJuice"
 images : ["/images/thumb/2022/thumb-tool_phpstorm_exclusion_folder.png"]
 tags : ["phpstorm", "setting"]
-categories : ["favorite"]
+categories : ["tool"]
 date: 2022-01-25
 draft: false
 ---
@@ -26,7 +26,7 @@ github에서 fork해 온 Hugo Theme를 custom 진행하면서 프로젝트내 �
 
 
 
-## 설정창에서 특정 폴더 검색 제외 시키기
+## 1.설정창에서 특정 폴더 검색 제외 시키기
 
 ★ 적용 방법
 
@@ -38,7 +38,7 @@ github에서 fork해 온 Hugo Theme를 custom 진행하면서 프로젝트내 �
 
 
 
-## 제외시키기 적용 후 확인해보기
+## 2.제외시키기 적용 후 확인해보기
 
 [적용 전 - 프로젝트 내 검색]
 
