@@ -26,7 +26,7 @@
   translation: You May Also Like
 
 - id: most_recent_post
-  translation: Our Most Recent Post
+  translation: 최근 게시글
 
 - id: written_by
   translation: Written By
@@ -38,7 +38,7 @@
   translation: Read Article
 
 - id: showing_posts_from
-  translation: Showing posts from
+  translation: Search Tag
 
 - id: home
   translation: Home

@@ -14,7 +14,7 @@ logo_text = "Bookworm"
 # Menu align
 menu_align = "center" # Menu-align value "left", "right" or "center" (if Search is disable/false Menu will align in Right)
 # Main section
-mainSections = ["blog","tool"]
+mainSections = ["tool","favorite","study","sideproject"]
 # Post layout
 post_layout = "list" # Post-Layout value ("grid" or "list")
 # Blog-details page sidebar

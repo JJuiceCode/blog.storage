@@ -4,33 +4,29 @@
 
 [[main]]
 weight = 1
-url = "/blog/study"
-name = "학습"
+url = "/study/"
+name = "Study"
 
 [[main]]
 weight = 2
-url = "/blog/sideproject"
-name = "프로젝트"
+url = "/sideproject/"
+name = "Project"
 
 [[main]]
 weight = 3
-url = "/blog/favorite"
-name = "좋아하는"
+url = "/favorite/"
+name = "Favorite"
   
 [[main]]
 weight = 4
-url = "/blog/tool"
-name = "툴팁"
+url = "/tool/"
+name = "Tool"
 #
 [[main]]
 weight = 5
 url = "tags/"
-name = "태그"
-#
-#[[main]]
-#weight = 6
-#url = "categories/"
-#name = "Category"
+name = "Tags"
+
 
 
 

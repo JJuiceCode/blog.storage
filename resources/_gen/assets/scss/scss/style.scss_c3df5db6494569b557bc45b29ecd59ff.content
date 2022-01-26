@@ -6933,9 +6933,9 @@ body {
   outline: 0; }
 
 .mark, mark {
-  border-bottom: 1px dashed rgba(1, 173, 159, 0.4);
-  background: transparent;
-  padding: 0;
+  background: #F7F7F7;
+  border-radius: 5px;
+  font-weight: bold;
   color: #01AD9F; }
 
 a:focus,
@@ -7498,7 +7498,8 @@ header {
   header .nav-item .nav-link {
     font-size: 18px;
     color: #152035 !important;
-    padding: 15px !important; }
+    padding: 15px !important;
+    font-weight: bold; }
     header .nav-item .nav-link:hover {
       color: #01AD9F !important; }
   @media (min-width: 991px) {

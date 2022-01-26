@@ -1,10 +1,10 @@
 ---
-title : "PHPStorm & Webstorm에서 특정 폴더 검색 제외하기"
+title : "PHPStorm & Webstorm에서 특정 폴더 검색 제외하기2"
 description : "PHPStorm 프로젝트내 검색할때 특정 폴더 제외하고 검색결과 확인하는 방법 알아보기"
 author : "JJuice"
 images : ["/images/thumb/2022/thumb-tool_phpstorm_exclusion_folder.png"]
 tags : ["phpstorm", "setting"]
-categories : ["tool"]
+categories : ["favorite"]
 date: 2022-01-25
 draft: false
 ---
