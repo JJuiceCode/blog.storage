@@ -1,6 +1,6 @@
 ---
-title : "Typora 이미지 자동 업로드 (mac 환경).1"
-description : "uPic & github을 이용한 typora 이미지 자동 업로드 방법 알아보기.1"
+title : "Typora 이미지 자동 업로드 (mac 환경)"
+description : "uPic & github을 이용한 typora 이미지 자동 업로드 방법 알아보기"
 author : "JJuice"
 images : ["/images/thumb/2022/blogthumb_typora_main.png"]
 tags : ["github", "uPic", "typora"]
