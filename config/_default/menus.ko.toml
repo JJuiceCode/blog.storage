@@ -10,7 +10,7 @@ name = "Study"
 [[main]]
 weight = 2
 url = "/sideproject/"
-name = "Project"
+name = "SideProject"
 
 [[main]]
 weight = 3

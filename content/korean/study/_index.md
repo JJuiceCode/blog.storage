@@ -1,5 +1,7 @@
 ---
 title: "Study"
-description: "각종 Tool 팁과 노하우"
+description: "학습한 결과물"
 draft: false
 ---
+
+# Study Pages

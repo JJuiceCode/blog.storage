@@ -1,5 +1,8 @@
 ---
 title: "Favorite"
-description: "각종 Tool 팁과 노하우"
+description: "내가 좋아하는 모든 것"
 draft: false
 ---
+
+
+# Favorites

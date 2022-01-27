@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="subscription 기능 false `date`"
+msg="test study컨텐츠 추가 메인 메뉴 project → side project 이름 변경 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="subscription 기능 false `date`"
+msg="test study컨텐츠 추가 메인 메뉴 project → side project 이름 변경 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
