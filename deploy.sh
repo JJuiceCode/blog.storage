@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="public필요없는 데이터 삭제 `date`"
+msg="header currentPage값 체크.1 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -16,7 +16,7 @@ git push origin master
 cd ..
 # blog 저장소 Commit & Push
 git add .
-msg="public필요없는 데이터 삭제 `date`"
+msg="header currentPage값 체크.1 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi

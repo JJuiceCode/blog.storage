@@ -17,6 +17,9 @@ defaultContentLanguage = "ko"
 disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
+
+
+
 [author]
  name = "JJuice"
  locatoin = "jjuice"
