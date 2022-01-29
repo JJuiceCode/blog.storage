@@ -2,20 +2,5 @@
 [ko]
 languageName = "Ko"
 languageCode = "ko-kr"
-contentDir = "content/korean"
+contentDir = "content"
 weight = 1
-
-################ English language ##################
-[en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 2
-
-
-################ French language ##################
-[fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 3
