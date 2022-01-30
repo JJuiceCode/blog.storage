@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="head > baseURL 고정 `date`"
+msg="baseof partial header 수정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -15,8 +15,8 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 # blog 저장소 Commit & Push
+msg="baseof partial header 수정 `date`"
 git add .
-msg="head > baseURL 고정 `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
