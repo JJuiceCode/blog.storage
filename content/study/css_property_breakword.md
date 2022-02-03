@@ -1,5 +1,5 @@
 ---
-title: "HTML 텍스트 줄바꿈을 단어 기준으로 정하게 만들어 주는 CSS 속성 | break-word"
+title: "HTML 텍스트 줄바꿈 CSS 속성 | break-word"
 author: "JJuice"
 images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
 tags: [break-word,css속성]
