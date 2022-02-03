@@ -1,11 +1,12 @@
 ---
-title: "HTML 텍스트 줄바꿈 CSS 속성 | break-word"
+title: "HTML 텍스트 줄바꿈을 단어 기준으로 정하게 만들어 주는 CSS 속성 | break-word"
 author: "JJuice"
 images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
 tags: [break-word,css속성]
 categories: [css]
 date: 2022-02-03T14:55:22+09:00
 draft: false
+
 ---
 
 
@@ -37,6 +38,10 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 상황에 따라 다르겠지만 보통 가독성을 높이기 위해서는 단어별로 줄 바꿈을 해주는게 더 좋아보인다.
 
 위와 같은 경우 `word-break` CSS속성을 이용해 단어 기준으로 줄 바꿈을 할지 OR 글자 기준으로 줄 바꿈을 할지 설정이 가능하다. 그 방법에 대해서 알아보자.
+
+
+
+
 
 
 
@@ -78,7 +83,7 @@ and·english·language
 
   >  '줄을 어떻게 바꿀 지' 이 부분은 **※ 제대로 짚고 넘어가기** 기준으로 다시 해석하자면
   >
-  > ​	→ CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
+  >  ​	→ CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
 
 
 
@@ -158,7 +163,7 @@ and·english·language
 
 ```css
 .keep-all {
-  word-break: keep-all;
+    word-break: keep-all;
 }
 ```
 
@@ -174,4 +179,5 @@ and·english·language
 
 작은 디테일이 쌓이고 쌓여 멋진 결과물이 나오게 된다. 시간이 조금 더 걸리더라도 조금 더 귀찮아 지더라도 작은 디테일을 놓치지 않도록 노력하자!!
 
-P.S 그나저나 간단한 컨텐츠들을 대부분 [tailwindcss](https://tailwindcss.com/)를 이용해 CSS 스타일을 적용하는데, 왜 tailwindcss에는 `word-break: keep-all` 을 적용시키는 속성값이 없는 것이냐!! 한글 무시하는건가~ ( tailwindcss 에서 비슷하게 사용할 수 있는 속성이 `break-words` → `overflow-wrap: break-word;` 인데 영어에는 적용되지만 한글에는 적용되지 않는다. )
+> 간단한 컨텐츠들을 대부분 [tailwindcss](https://tailwindcss.com/)를 이용해 CSS 스타일을 적용하는데, 왜 tailwindcss에는 `word-break: keep-all` 을 적용시키는 속성값이 없는 것이냐!! 한글 무시하는건가~ ( tailwindcss 에서 비슷하게 사용할 수 있는 속성이 `break-words` → `overflow-wrap: break-word;` 인데 영어에는 적용되지만 한글에는 적용되지 않는다. )
+

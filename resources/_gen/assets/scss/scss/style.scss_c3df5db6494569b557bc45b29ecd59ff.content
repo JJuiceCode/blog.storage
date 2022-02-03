@@ -7128,8 +7128,12 @@ a.post-title:hover,
   .content h4,
   .content .h4 {
     color: #152035;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-weight: 700; }
+  .content h2, .content .h2 {
+    border-bottom: 1px solid #959595;
+    margin-top: 50px; }
   .content h3, .content .h3 {
     margin-top: 40px; }
   .content ol,
@@ -7171,6 +7175,8 @@ a.post-title:hover,
   .content .h6 {
     font-weight: 700;
     color: #152035; }
+  .content h1, .content .h1 {
+    margin-top: 60px; }
   .content strong {
     font-weight: 800; }
   .content a {
