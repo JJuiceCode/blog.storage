@@ -8472,5 +8472,5 @@ code {
 
 @media (max-width: 400px) {
   .jjuice-responsive-width {
-    width: 190px;
+    width: 150px;
     height: auto; } }
