@@ -63,8 +63,20 @@ maxAge = "720h"
 [markup.goldmark.renderer]
 unsafe= true
 
+
 [markup.highlight]
-style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+style = 'dracula'
+#anchorLineNos = false
+# see https://xyproto.github.io/splash/docs/all.html
+codeFences = true
+guessSyntax = true
+#hl_Lines = ''
+#lineAnchors = ''
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+tabWidth = 4
 
 
 ############################ Media types ############################
@@ -89,3 +101,4 @@ rel = "manifest"
   endLevel = 3
   ordered = false
   startLevel = 2
+

@@ -1,11 +1,14 @@
 ---
 title: "HTML 텍스트 줄바꿈을 단어 기준으로 정하게 만들어 주는 CSS 속성 | break-word"
 author: "JJuice"
+images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
 tags: [break-word,css속성]
 categories: [css]
 date: 2022-02-03T14:55:22+09:00
 draft: false
 ---
+
+
 
 
 # 시작하기에 앞서
@@ -14,10 +17,12 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 
 ```html
 <p class="mt-8 text-lg">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean    		necmollisnulla.Phase lluslacinia tempusmauriseulaoreet.Proin gravida velit dictum dui consequat malesuada.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean   necmollisnulla.Phase lluslacinia tempusmauriseulaoreet.
+    Proin gravida velit dictum dui consequat malesuada.
 </p>
 <p class="mt-8 text-lg">
-	하이엔드 스피커의 대명사인 FOCAL(포컬)은 1972년 설립되어 지금까지 홈오디오는 물론,
+    하이엔드 스피커의 대명사인 FOCAL(포컬)은 1972년 설립되어 지금까지 홈오디오는 물론,
 	카오디오와 프로페셔널 오디오까지 다양한 라인업으로 유럽에서는 60%의 절대적인 시장
 	점유율을 기록하고 있습니다.
 </p>
@@ -35,19 +40,19 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 
 
 
-### ※ 제대로 짚고 넘어가기
+**※ 제대로 짚고 넘어가기**
 
 - 보통 HTML에서 사용되는 다양한 언어를 2가지 타입으로 나뉜다.
-    - 중국어/일본어/한글 : **CJK**
-    - 그 외 언어 숫자/영어등 : **non-CJK**
+  - 중국어/일본어/한글 : **CJK**
+  - 그 외 언어 숫자/영어등 : **non-CJK**
 - 보통 글자들을 나누는 중단점 `.` 이 존재하는데 이 2가지 언어 타입은 중단점`.` 의 기준이 다르다.
-    - CJK 중단점 기준 : 음절
-    - non-CJK 중단점 기준 : 공백(띄어쓰기, 하이픈`-`)
+  - CJK 중단점 기준 : 음절
+  - non-CJK 중단점 기준 : 공백(띄어쓰기, 하이픈`-`)
 - 아래의 예제를 보며 이해해보자.
 
 ▶ 언어 타입에 따른 중단점`.`  위치 살펴보기
 
-```
+```bash
 [한글,영어 단어 예제]
 저는 한글입니다
 and english language
@@ -63,7 +68,7 @@ and·english·language
 
 
 
-## @ `word-break` 속성 알아보기
+## word-break 속성 알아보기
 
 ### `word-break` 무엇에 쓰는 물건인고?
 
@@ -73,11 +78,11 @@ and·english·language
 
   >  '줄을 어떻게 바꿀 지' 이 부분은 **※ 제대로 짚고 넘어가기** 기준으로 다시 해석하자면
   >
-  >  ​	→ CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
+  > ​	→ CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
 
 
 
-### `word-break`  속성값 알아보기
+###  `word-break` 속성값 알아보기
 
 ```
 word-break : normal | break-all | keep-all | initial | inherit;
@@ -85,7 +90,7 @@ word-break : normal | break-all | keep-all | initial | inherit;
 
 - `initial:기본값` 으로 설정 & `inherit 부모 요소의 속성값을 상속` → 이 2가지의 속성값에 대해서는 다른 설명을 추가하지 않겠습니다.
 
-#### ● `normal`  : CJK & non CJK 둘 다 기본 중단점`.`  기준으로 줄바꿈을 설정한다.
+▶`normal`  : CJK & non CJK 둘 다 기본 중단점`.`  기준으로 줄바꿈을 설정한다.
 
 ```
 [한글,영어 단어 예제 → word-break:normal 적용]
@@ -103,7 +108,7 @@ and·english·language
 
 
 
-#### ● `break-all` : CJK & non CJK 둘 다 중단점의 기준점을 '음절'로 둔다.
+▶ `break-all` : CJK & non CJK 둘 다 중단점의 기준점을 '음절'로 둔다.
 
 ```
 [한글,영어 단어 예제 → word-break:break-all 적용]
@@ -119,7 +124,7 @@ a·n·d·e·n·g·l·i·s·h·l·a·n·g·u·a·g·e
 
 
 
-#### ● `keep-all` : CJK & non CJK 둘 다 중단점의 기준점을 '공백'로 둔다.
+▶ `keep-all` : CJK & non CJK 둘 다 중단점의 기준점을 '공백'로 둔다.
 
 - 여기서 공백에 하이픈`-` 도 포함이 된다.
 
@@ -153,7 +158,7 @@ and·english·language
 
 ```css
 .keep-all {
-    word-break: keep-all;
+  word-break: keep-all;
 }
 ```
 
