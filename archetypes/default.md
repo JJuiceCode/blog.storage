@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 author: "JJuice"
-tage: []
+tags: []
 categories: []
 date: {{ .Date }}
 draft: true
