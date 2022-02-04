@@ -26,6 +26,8 @@ Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
 Combined emphasis with **asterisks and _underscores_**.
 
+---
+
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 <hr>
@@ -82,13 +84,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 <hr>
 
 #### Notice
-
 {{< notice "note" >}}
+`notice "타이틀"` 타이틀 부분에 한글을 적으면 이 레이아웃이 적용되지 않습니다.
+{{< /notice >}}
+
+{{< notice "error" >}}
 This is a simple note.
 {{< /notice >}}
 
 {{< notice "tip" >}}
-This is a simple tip.
+`notice "타이틀"` 타이틀 부분에 한글을 적으면 이 레이아웃이 적용되지 않습니다.
 {{< /notice >}}
 
 {{< notice "info" >}}
@@ -192,13 +197,15 @@ Markdown | Less | Pretty
 
 ##### Image
 
-{{< image src="images/post/02.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid w-100" title="image title"  webp="false" >}}
+{{< image src="images/thumb/blogthumb_typora_main.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" 
+option="q100" class="img-fluid w-100" title="image title"  webp="false" >}}
 
 <hr>
 
 ### Gallery
 
-{{< gallery dir="images/post" class="" height="400" width="400" webp="true" command="Fit" options="" zoomable="true" >}}
+{{< gallery dir="images/thumb" class="" height="400" width="400" webp="true" command="Fit" options="" 
+zoomable="true" >}}
 
 <hr>
 

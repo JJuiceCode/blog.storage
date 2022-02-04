@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="single페이지  하단 소셜 링크 및 tags 삭제 <`date`>"
+msg="elements.md 내용 수정 <`date`>"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -15,7 +15,7 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 # blog 저장소 Commit & Push
-msg="single페이지  하단 소셜 링크 및 tags 삭제 <`date`>"
+msg="elements.md 내용 수정 <`date`>"
 git add .
 if [ $# -eq 1 ]
   then msg="$1"
