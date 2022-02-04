@@ -35,7 +35,7 @@
   translation: Read More
   
 - id: read_article
-  translation: Read Article
+  translation: POST 바로가기
 
 - id: showing_posts_from
   translation: Search Tag

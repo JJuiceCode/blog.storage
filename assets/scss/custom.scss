@@ -32,12 +32,18 @@
 }
 
 code {
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: #91EEAB;
+  padding: 1px 3px;
+  border-radius: 2px;
+  color: #C2D0DD;
   background : #38373A;
 }
 
+.jjuice-link {
+  color: $color-primary;
+}
+.jjuice-post-border {
+  border-bottom: 2px dotted $gray-400;
+}
 .jjuice-responsive-width {
  @include mobile-xs {
    width: 150px;

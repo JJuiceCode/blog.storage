@@ -1,5 +1,6 @@
 ---
-title: "HTML 텍스트 줄바꿈을 단어 기준으로 정하게 만들어 주는 CSS 속성 | break-word"
+title: "HTML 텍스트 줄바꿈 CSS 속성 | word-break"
+description: "HTML 텍스트 단어별 줄바꿈을 지정해주는 word-break CSS속성 알아보기"
 author: "JJuice"
 images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
 tags: [break-word,css속성]
@@ -28,12 +29,13 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 	점유율을 기록하고 있습니다.
 </p>
 ```
+<br/>
 
 특별한 CSS 속성값을 부여해주지 않으면 아래의 이미지같이 렌더링되어 텍스트가 출력된다.
-
 ![image-20220203113606947](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220203113606947.png)
-
 ![image-20220203113938066](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220203113938066.png)
+
+<br/>
 
 상황에 따라 다르겠지만 보통 가독성을 높이기 위해서는 단어별로 줄 바꿈을 해주는게 더 좋아보인다.
 
@@ -43,9 +45,9 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 
 
 
+<br/>
 
-
-**※ 제대로 짚고 넘어가기**
+##### ※ 제대로 짚고 넘어가기
 
 - 보통 HTML에서 사용되는 다양한 언어를 2가지 타입으로 나뉜다.
   - 중국어/일본어/한글 : **CJK**
@@ -53,10 +55,11 @@ HTML 홈페이지의 컨텐츠를 만들다 보면 `<p>` 태그에 블락 영역
 - 보통 글자들을 나누는 중단점 `.` 이 존재하는데 이 2가지 언어 타입은 중단점`.` 의 기준이 다르다.
   - CJK 중단점 기준 : 음절
   - non-CJK 중단점 기준 : 공백(띄어쓰기, 하이픈`-`)
-- 아래의 예제를 보며 이해해보자.
+  - ▼아래의 예제를 보며 이해해보자.
 
-▶ 언어 타입에 따른 중단점`.`  위치 살펴보기
-
+<br/>
+◎ [Example] 언어 타입에 따른 중단점`.`  위치 살펴보기
+  
 ```bash
 [한글,영어 단어 예제]
 저는 한글입니다
@@ -69,39 +72,43 @@ and english language
 and·english·language
 ```
 
-- 위처럼 한글과 영어의 중단점`.` 의 위치를 정확히 짚고 다음단계로 넘어가도록 하자.
+- 한글은 한 글자 한 글자 **음절**을 기준으로 중단점`.`이 나뉘어져 있고 영어는 **공백**을 기준으로 중단점`.`이 나뉘어져 있다는 걸 확실히 짚고 넘어가자. 
 
 
 
 ## word-break 속성 알아보기
 
-### `word-break` 무엇에 쓰는 물건인고?
+### word-break 무엇에 쓰는 물건인고?
 
 └ 줄바꿈을 할 때 단어 기준으로 할 지 or 글자 기준으로 할지 정하는 CSS 속성입니다.
 
 - 더 정확히 정의하자면 텍스트가 자신의 컨텐츠 영역(컨테이너 박스)밖으로 oveflow할때(벗어날때) <u>줄을 어떻게 바꿀 지</u> 지정해주는 CSS 속성입니다.
 
   >  '줄을 어떻게 바꿀 지' 이 부분은 **※ 제대로 짚고 넘어가기** 기준으로 다시 해석하자면
-  >
-  >  ​	→ CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
+  >  → CJK or non CJK 텍스트의 중단점`.` 을 어떤 기준을 정해줄지 라고 해석할 수 있을거 같다.
 
 
 
-###  `word-break` 속성값 알아보기
+###  word-break 속성값 알아보기
 
 ```
 word-break : normal | break-all | keep-all | initial | inherit;
 ```
 
-- `initial:기본값` 으로 설정 & `inherit 부모 요소의 속성값을 상속` → 이 2가지의 속성값에 대해서는 다른 설명을 추가하지 않겠습니다.
+- `initial:기본값`으로 설정
+- `inherit: 부모 요소의 속성값을 상속`으로 설정 
+- 위의 2가지의 속성값에 대해서는 다른 설명을 추가하지 않겠습니다.
 
-▶`normal`  : CJK & non CJK 둘 다 기본 중단점`.`  기준으로 줄바꿈을 설정한다.
+<br/>
+
+▶`word-break:normal`  : CJK & non CJK 둘 다 기본 중단점`.`  기준으로 줄바꿈을 설정한다.
 
 ```
 [한글,영어 단어 예제 → word-break:normal 적용]
 저·는·한·글·입·니·다
 and·english·language
 ```
+<br>
 
 실제 예제 출력 결과물을 살펴보자.
 
@@ -111,9 +118,9 @@ and·english·language
 
 > 똑같이 적용된 `word-break: normal;` 이지만  **※제대로 짚고 넘어가기**에서 처럼 영어와 한글의 중단점`.` 의 기준이 다르게 때문에  결과값이 다르다는 걸 꼭 인식해야 합니다.
 
+<br>
 
-
-▶ `break-all` : CJK & non CJK 둘 다 중단점의 기준점을 '음절'로 둔다.
+▶ `word-break:break-all` : CJK & non CJK 둘 다 중단점의 기준점을 '음절'로 둔다.
 
 ```
 [한글,영어 단어 예제 → word-break:break-all 적용]
@@ -121,6 +128,7 @@ and·english·language
 a·n·d·e·n·g·l·i·s·h·l·a·n·g·u·a·g·e
 ```
 
+<br>
 실제 예제 출력 결과물을 살펴보자.
 
 ![image-20220203132327207](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220203132327207.png)
@@ -128,16 +136,19 @@ a·n·d·e·n·g·l·i·s·h·l·a·n·g·u·a·g·e
 > `word-break:break-all` 적용된 후의 출력된 값입니다. 한글 같은 경우 원래의 중단점`.` 기준이 **음절**이였기 `word-break: normal`과 다른게 없지만 영어 같은 경우 원래의 중단점`.` 기준 **공백** 이였기 때문에 기존의 `word-break: normal` 과 전혀 다른 결과물을 보여줍니다.
 
 
+<br>
 
-▶ `keep-all` : CJK & non CJK 둘 다 중단점의 기준점을 '공백'로 둔다.
+▶ `word-break:keep-all` : CJK & non CJK 둘 다 중단점의 기준점을 '공백'로 둔다.
 
 - 여기서 공백에 하이픈`-` 도 포함이 된다.
 
 ```
-[한글,영어 단어 예제 → word-break:keep-all 적용]
+[한글,영어 단어 예제 → word-break : keep-all 적용]
 저는·한글·입니다
 and·english·language
 ```
+
+<br>
 
 실제 예제 출력 결과물을 살펴보자.
 

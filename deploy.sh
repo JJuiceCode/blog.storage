@@ -5,7 +5,7 @@ cd public
 # Add changes to git.
 git add .
 # Commit changes.
-msg="포스트 수정 및 highlight syntax 수정_`date`"
+msg="리스트 페이지 & 상세페이지 레이아웃 및 css 수장`date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
@@ -15,7 +15,7 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 # blog 저장소 Commit & Push
-msg="포스트 수정 및 highlight syntax 수정_`date`"
+msg="리스트 페이지 & 상세페이지 레이아웃 및 css 수장`date`"
 git add .
 if [ $# -eq 1 ]
   then msg="$1"
