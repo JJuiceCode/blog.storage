@@ -133,22 +133,23 @@ sidebar = ["toc","categories", "tags"]
 # available widget : search,categories,tags,recent-post
 
 ############################# social site ########################
+# fontawesome icon pack : https://fontawesome.com/icons/
 [[social]]
 title = "facebook"
-icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-facebook"
 link = "#"
 
 [[social]]
 title = "twitter"
-icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-twitter"
 link = "#"
 
 [[social]]
 title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-instagram"
 link = "#"
 
 [[social]]
 title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-linkedin"
 link = "#"
