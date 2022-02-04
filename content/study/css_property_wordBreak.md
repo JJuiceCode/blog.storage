@@ -3,7 +3,7 @@ title: "HTML 텍스트 줄바꿈 CSS 속성 | word-break"
 description: "HTML 텍스트 단어별 줄바꿈을 지정해주는 word-break CSS속성 알아보기"
 author: "JJuice"
 images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
-tags: [break-word,css속성]
+tags: [word-break,css]
 categories: [css]
 date: 2022-02-03T14:55:22+09:00
 draft: false
