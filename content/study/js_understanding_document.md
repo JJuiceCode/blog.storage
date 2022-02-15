@@ -6,7 +6,7 @@ images: ["/images/thumb/2022/thumb_js_understanding_document.jpg"]
 tags: [javascript,document]
 categories: [study]
 date: 2022-02-09T11:30:25+09:00
-draft: false
+draft: true
 
 ---
 
@@ -97,33 +97,19 @@ docu·ment : <명사> 서류,문서 | (컴퓨터의) 문서 (파일)
 
 {{< notice "info" >}}
 
-Document is object or interface that *represents* webpage loaded.
+-document 객체 or 인터페이스는 웹페이지가 로드되었을때 나타난다.<br/>
 
--document 객체 or 인터페이스는 웹페이지가 로드되었을때 나타난다.
+-만약 HTML 페이지의 엘리먼트(요소)에 접근하려면, 항상 document object에 접근하는걸로 시작한다.<br/>
 
-If you want to access any element in an HTML page, you always start with accessing the document object.
+-그래서 인터페이스이다.<br/>
 
--만약 HTML 페이지의 엘리먼트(요소)에 접근하려면, 항상 document object에 접근하는걸로 시작한다.
+-브라우저안의 로드된 모든 웹페이지에 (document 인터페이스가)나타난다.<br/>
 
-So, it is an interface.
+-그리고 웹페이지 컨텐츠 (정확히는 DOM 트리 위치에)의 진입점(진입할 수 있게 도와주는) 역할을 수행한다.<br/>
 
--그래서 인터페이스이다.
+-일반적으로 (DOM트리는) document 루트 경로를 말하며,<br/>
 
-and represents any web page loaded in the browser
-
--브라우저안의 로드된 모든 웹페이지에 (document 인터페이스가)나타난다.
-
-and serves as an entry point into the web page's content. (which is the DOM tree)
-
--그리고 웹페이지 컨텐츠 (정확히는 DOM 트리 위치에)의 진입점(진입할 수 있게 도와주는) 역할을 수행한다.
-
-Basically, it is the root of the document tree,
-
--일반적으로 (DOM트리는) document 루트 경로를 말하며,
-
-and provides the primary access to the document's data
-
--기본적인 document data에 접근할 수 있게 지원(제공)한다.
+-기본적인 document data에 접근할 수 있게 지원(제공)한다.<br/>
 
 {{< /notice >}}
 

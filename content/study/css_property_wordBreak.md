@@ -4,7 +4,7 @@ description: "HTML 텍스트 단어별 줄바꿈을 지정해주는 word-break C
 author: "JJuice"
 images: ["/images/thumb/2022/thumb-study_css_wordbreak.png"]
 tags: [word-break,css]
-categories: [css]
+categories: [tool]
 date: 2022-02-03T14:55:22+09:00
 draft: false
 
