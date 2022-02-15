@@ -6,7 +6,7 @@ images: ["/images/thumb/2022/thumb_js_understanding_document.jpg"]
 tags: [javascript,document]
 categories: [study]
 date: 2022-02-09T11:30:25+09:00
-draft: true
+draft: false
 
 ---
 
@@ -193,3 +193,58 @@ console.log(document);
 
 
 # 추가 내용
+
+<2022.2.15 추가>
+
+※ 자료 출처 : [생활코딩-Object Model](https://opentutorials.org/course/1375/6622)
+
+## Object Model이란?
+
+자바스크립트에서는 브라우저를 컨트롤 하기 위해 탄생되었다.
+
+자바스크립트에서 브라우저의 웹 컨텐츠 요소(HTML 태그)를 동적으로 제어하기 위해서는 반드시 필요한게 한 가지고 있다. 그건 바로 **객체**이다.
+
+자바스크립트는 객체만을  컨트롤 할 수 있다. 이 부분을 브라우저에서도 잘 알고 있다. 그래서 브라우저에서는 모든 HTML 문서를 읽는 동시에 태그 요소들을 **객체로 만들어준다 → 객체화** 시켜 놓는다.
+
+브라우저의 구성요소는 window객체(전역객체) → Dom, Bom (window객체의 프로퍼티)로 되어있다. **Dom,Bom 요소들이 바로 자바스크립트에서 쉽게 접근해 제어하기 위해 객체화 시켜 놓은 대표적인 Object Model들이다.**
+
+DOM에는 전역객체인 window의 속성값 중 하나이다. window 다른 종류의 속성값들 `location` `frame` 등은 BOM에 속해져있다.
+
+![image-20220215132712152](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220215132712152.png)
+
+>  하나 짚고 넘어가야 할 점은 브라우저 환경에서만 DOM, BOM 구조가 존재하는 것이지 다른 환경(ex:node.js)에서는 JS Core 부분을 제외하고는 존재하지 않는다.
+
+
+
+<br/>a
+
+```html
+<body>
+    <img src="www.jjuice.com/jjuice.jpg" />
+</body>
+```
+
+위와 같은 HTML 문서가 있다.
+
+브라우저에서 해당 문서를 로드하면서 각 HTML요소들을 객체화(객체로 만들어 놓음)시킨다. 그러면 우리가 할 일은 자바스크립트 코드로 객체화 시켜놓은 해당 `<img>` 태그 요소를 찾아오기면 하는 것이다.
+
+그래서 우리는 웹페이지가 로드되면서 자동으로 세팅되어 있는 document 인터페이스에 접근해 (정확히는 DOM Tree 루트) document가 제공하는 메서드를 사용해 아래와 같은 코드로 `<img>` 태그 요소를 변수에 할당해 줄 수 있고 원한다면 자바스크립트 프로퍼티와 메서드를 사용해 동적으로 `<img>` 태그 요소를 변경해 줄 수 있다.
+
+> 이미 화면에 만들어진 (렌더링 된) HTML문서는 HTML 코드를 수정해서 변경할 수가 없다. 오직 자바스크립트만이 동적으로 변경이 가능하다.
+
+```js
+const imgs = document.getElementsByTagName("img");
+imgs.style.width = 300px;
+```
+
+
+
+### Object Model 핵심요약
+
+- JS는 브라우저 요소들을 제어하기 위해 사용된다.
+- JS는 오직 객체만을 컨트롤 할 수 있다.
+- 브라우저는 JS를 위해 미리 HTML요소들을 **객체화** 시켜 놓는다.
+- 브라우저에서 이런 객체화 세팅을 위한 DOM, BOM, JS Core 구조로 되어있다. (모두 window객체 프로퍼티)
+- JS에서 할 일은 브라우저에서 준비해 놓은 객체들 중에 내가 필요한 객체를 찾는 것이다.
+- Document인터페이스의  DOM Tree 진입점을 통해 루트 경로에 접근한 상태에서 `document`의 다양한 프로퍼티와 메서드를 통해 동적으로 요소를 제어할 수 있다.
+
