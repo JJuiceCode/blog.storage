@@ -3,7 +3,7 @@ title: "JS Document 이해하기"
 description: "자바스크립트 document객체에 간단히 파헤쳐보기!"
 author: "JJuice"
 images: ["/images/thumb/2022/thumb_js_understanding_document.jpg"]
-tags: [javascript,document]
+tags: [javascript,document,dom]
 categories: [study]
 date: 2022-02-09T11:30:25+09:00
 draft: false
@@ -181,13 +181,13 @@ console.log(document);
 
 
 
-# 추가 내용
+## 추가 내용
 
 <2022.2.15 추가>
 
 ※ 자료 출처 : [생활코딩-Object Model](https://opentutorials.org/course/1375/6622)
 
-## Object Model이란?
+### 내가 이해하고 있는 Object Model
 
 자바스크립트에서는 브라우저를 컨트롤 하기 위해 탄생되었다.
 
@@ -201,15 +201,16 @@ DOM에는 전역객체인 window의 속성값 중 하나이다. window 다른 �
 
 ![image-20220215132712152](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220215132712152.png)
 
->  하나 짚고 넘어가야 할 점은 브라우저 환경에서만 DOM, BOM 구조가 존재하는 것이지 다른 환경(ex:node.js)에서는 JS Core 부분을 제외하고는 존재하지 않는다.
+> 브라우저에서는 DOM, BOM, Javascript Core 이렇게 3개의 구조로 되어있다. 하나 짚고 넘어가야 할 점은 브라우저 환경에서만 DOM, BOM이 존재한다.
+> 다른 환경(ex:node.js환경)에서는 JS Core 부분을 제외하고는 존재하지 않는다.(node.js를 다뤄보지는 않았지만 DOM,BOM같이 node.js에서 필요한 다른 구조들이 있지 않을까 싶다.)
 
 
 
-<br/>a
+<br/>
 
 ```html
 <body>
-<img src="www.jjuice.com/jjuice.jpg" />
+    <img src="www.jjuice.com/jjuice.jpg" />
 </body>
 ```
 
@@ -227,13 +228,14 @@ imgs.style.width = 300px;
 ```
 
 
+<br/>
 
-### Object Model 핵심요약
+**★ 내가 이해한 Object Model 핵심요약**
 
 - JS는 브라우저 요소들을 제어하기 위해 사용된다.
-- JS는 오직 객체만을 컨트롤 할 수 있다.
+- JS는 **오직 객체만을** 컨트롤 할 수 있다.
 - 브라우저는 JS를 위해 미리 HTML요소들을 **객체화** 시켜 놓는다.
 - 브라우저에서 이런 객체화 세팅을 위한 DOM, BOM, JS Core 구조로 되어있다. (모두 window객체 프로퍼티)
 - JS에서 할 일은 브라우저에서 준비해 놓은 객체들 중에 내가 필요한 객체를 찾는 것이다.
-- Document인터페이스의  DOM Tree 진입점을 통해 루트 경로에 접근한 상태에서 `document`의 다양한 프로퍼티와 메서드를 통해 동적으로 요소를 제어할 수 있다.
+- Document인터페이스의 DOM Tree 진입점을 통해 루트 경로에 접근한 상태에서 `document`의 다양한 프로퍼티와 메서드를 통해 동적으로 요소를 제어할 수 있다.
 
