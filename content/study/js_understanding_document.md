@@ -6,7 +6,7 @@ images: ["/images/thumb/2022/thumb_js_understanding_document.jpg"]
 tags: [javascript,document]
 categories: [study]
 date: 2022-02-09T11:30:25+09:00
-draft: true
+draft: false
 
 ---
 
