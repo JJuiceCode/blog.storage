@@ -7242,32 +7242,32 @@ a.post-title:hover,
     background: #fcfcfc;
     margin-bottom: 0; }
   .content .notices {
-    margin: 2rem 0;
+    margin: 1rem 0;
     position: relative;
     overflow: hidden; }
   .content .notices p {
     padding: 8px 8px 8px 15px;
     margin-bottom: 0; }
-  .content .notices.note p {
-    border-top: 30px solid #6ab0de;
+  .content .notices.word p {
+    border-top: 30px solid #198754;
     background: #FAFAFA; }
-  .content .notices.note p::after {
-    content: 'Note';
+  .content .notices.word p::after {
+    content: 'Word';
     position: absolute;
     top: 2px;
     color: #fff;
     left: .8rem; }
-  .content .notices.tip p {
-    border-top: 30px solid #78C578;
+  .content .notices.error p {
+    border-top: 30px solid #E06F6C;
     background: #FAFAFA; }
-  .content .notices.tip p::after {
-    content: 'Tip';
+  .content .notices.error p::after {
+    content: 'Error Issue';
     position: absolute;
     top: 2px;
     color: #fff;
     left: .8rem; }
   .content .notices.info p {
-    border-top: 30px solid #F0B37E;
+    border-top: 30px solid #6c757d;
     background: #f7f7f7; }
   .content .notices.info p::after {
     content: 'Info';
@@ -7275,12 +7275,20 @@ a.post-title:hover,
     top: 2px;
     color: #fff;
     left: .8rem; }
-  .content .notices.error p {
-    border-top: 30px solid #E06F6C;
-    background: #FAFAFA;
-    color: #E06F6C; }
-  .content .notices.error p::after {
-    content: 'Error Issue';
+  .content .notices.tip p {
+    border-top: 30px solid #0d6efd;
+    background: #FAFAFA; }
+  .content .notices.tip p::after {
+    content: 'Tip';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: .8rem; }
+  .content .notices.solution p {
+    border-top: 30px solid #6f42c1;
+    background: #FAFAFA; }
+  .content .notices.solution p::after {
+    content: 'Solution';
     position: absolute;
     top: 2px;
     color: #fff;
@@ -8481,10 +8489,10 @@ iframe.wait-autoplay {
       color: #adadad; }
 
 code {
-  padding: 1px 3px;
-  border-radius: 2px;
-  color: #C2D0DD;
-  background: #38373A; }
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #38373A;
+  background: #e9ecef; }
 
 .jjuice-link {
   color: #01AD9F; }

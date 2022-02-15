@@ -84,20 +84,24 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 <hr>
 
 #### Notice
-{{< notice "note" >}}
-`notice "타이틀"` 타이틀 부분에 한글을 적으면 이 레이아웃이 적용되지 않습니다.
+{{< notice "word" >}}
+`notice "word"` 단어적 의미에 대한 내용들
 {{< /notice >}}
 
 {{< notice "error" >}}
-This is a simple note.
-{{< /notice >}}
-
-{{< notice "tip" >}}
-`notice "타이틀"` 타이틀 부분에 한글을 적으면 이 레이아웃이 적용되지 않습니다.
+`notice "Error"` 관련된 각종 에러 이슈 내용들
 {{< /notice >}}
 
 {{< notice "info" >}}
-This is a simple info.
+`notice "info"` 각종 참조 내용(공식문서등)들
+{{< /notice >}}
+
+{{< notice "tip" >}}
+`notice "tip"` 팁과 노하우 추천 내용들
+{{< /notice >}}
+
+{{< notice "solution" >}}
+`notice "solution"` 문제점에 대한 해결 방안
 {{< /notice >}}
 
 #### Tab
