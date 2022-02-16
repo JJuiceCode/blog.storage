@@ -88,17 +88,18 @@ $npx tailwindcss init
 
 `content` 속성안에 아래의 코드를 추가하자.
 
-- 저는 `deepDive` 폴더 안 `src` 폴더를 생성한 후 `src` 폴더에 모든 HTML 문서를 생성해 줄 것입니다.
+- `content`란에 넣어주는 값은 내가 tailwindcss를 적용할 타켓(폴더or파일)이 누구인지 알려주는 겁니다.
+- 예를들어 아래 `"./src/**/*.{html,js}"` 같은 경우 `루트 프로젝트 폴더 > src폴더`안에 있는 모든 html,js파일에 tailwindcss를 적용시켜주겠다 라고 설정해 주는 겁니다.
 
 ![image-20220216104641262](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220216104641262.png)
 
 ```js
 module.exports = {
-    content: [ "./src/**/*.{html,js}" ],
-    theme: {
-        extend: { },
-    },
-    plugins: [],
+	content: [ "./src/**/*.{html,js}" ],
+	theme: {
+		extend: { },
+	},
+	plugins: [],
 }
 ```
 
@@ -160,9 +161,9 @@ $npx tailwindcss -i ./src/tailwind_input.css -o ./dist/output.css --watch
 	<link href="dist/tailwind_output.css" rel="stylesheet">
 </head>
 <body>
-	<h1 class="text-5xl font-bold text-pink-600">
-		Tailwindcss Deep Dive!
-	</h1>
+<h1 class="text-5xl font-bold text-pink-600">
+	Tailwindcss Deep Dive!
+</h1>
 </body>
 ```
 위와 같이 tailwindcss 값을 적어주면 `tailwind_output.css` 파일에 자동으로 Just-in-time형식으로 해당 css코드만 추가된다.
@@ -200,12 +201,15 @@ warn - No utility classes were detected in your source files. If this is unexpec
 ![image-20220216130709398](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220216130709398.png)
 
 -나의 실수를 확인해보자.
-
 - `deepDive > src` 폴더에 `index.html`을 생성한 게 아니라 `deepDive` 루트 경로에 `index.html` 을 생성했다.
+
+
 
 ![image-20220216131211117](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220216131211117.png)
 
 - 분명 `tailwind.config.js > content` 값에는 `./src/**/*.{html,js}`, 즉 src폴더 안에 있는 모든 html,js파일들로만 설정을 해주었었다. 설정값에는 `src` 폴더 내부 파일에만 tailwindcss가 적용되게 설정되어 있는데, 루트경로에 tailwindcss를 사용하려고 하니 경고 메세지가 뜬 것이였다.
+    - 만약 루트 경로 가 아닌 `deepDive > src` 폴더에 `index.html`을 생성한 상황이라면 관련 경고 메세지가 뜨지 않는다.
+
 
 ### 😃Solution
 {{<notice "solution">}}
@@ -215,11 +219,11 @@ warn - No utility classes were detected in your source files. If this is unexpec
 ```js
 //Erro.1 → Solution Code
 module.exports = {
-  content: [
-      'index.html', //루트 경로의 index.html 단일 파일에만 적용
-      '*.{html,js}', //루트 경로의 모든 html,js파일
-      './src/**/*.{html,js}', //src 경로의 모든 html,js파일
-  ],
+	content: [
+		'index.html', //루트 경로의 index.html 단일 파일에만 적용
+		'*.{html,js}', //루트 경로의 모든 html,js파일
+		'./src/**/*.{html,js}', //src 경로의 모든 html,js파일
+	],
 ```
 
 # 마무리하며..
