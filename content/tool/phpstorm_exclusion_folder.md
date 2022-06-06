@@ -1,10 +1,10 @@
 ---
-title : "PHPStorm & Webstorm에서 특정 폴더 검색 제외하기"
-description : "PHPStorm 프로젝트내 검색할때 특정 폴더 제외하고 검색결과 확인하는 방법 알아보기"
-author : "JJuice"
-images : ["/images/thumb/2022/thumb-tool_phpstorm_exclusion_folder.png"]
-tags : ["phpstorm", "setting"]
-categories : ["tool"]
+title: 'PHPStorm & Webstorm에서 특정 폴더 검색 제외하기'
+description: 'PHPStorm 프로젝트내 검색할때 특정 폴더 제외하고 검색결과 확인하는 방법 알아보기'
+author: 'JJuice'
+images: ['/images/thumb/2022/thumb-tool_phpstorm_exclusion_folder.png']
+tags: ['phpstorm', 'setting']
+categories: ['tool']
 date: 2022-01-25
 draft: false
 ---
@@ -15,16 +15,12 @@ github에서 fork해 온 Hugo Theme를 custom 진행하면서 프로젝트내 �
 
 바로 이런 경우를 위해 PHPStorm에서 손쉽게 원하는 폴더를 검색 대상에 제외시킬 수 있게 '설정'창에서 손쉽게 변경 할 수 있다. (JetBrains 관련 된 모든 툴도 해보진 않았지만 적용이 가능하지 않을까 싶다.)
 
-
-
 ※ 참고사항
 
 - 윈도우 OS 환경
 - 한글 Plug in 세팅 된 PHPStorm 사용
 - 검색 관련 된 PHPStorm 단축키
-    - `Ctrl + Shift + F` : 프로젝트내 전체 검색
-
-
+  - `Ctrl + Shift + F` : 프로젝트내 전체 검색
 
 ## 1.설정창에서 특정 폴더 검색 제외 시키기
 
@@ -36,8 +32,6 @@ github에서 fork해 온 Hugo Theme를 custom 진행하면서 프로젝트내 �
 
 ![image-20220125111137670](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220125111137670.png)
 
-
-
 ## 2.제외시키기 적용 후 확인해보기
 
 [적용 전 - 프로젝트 내 검색]
@@ -46,12 +40,8 @@ github에서 fork해 온 Hugo Theme를 custom 진행하면서 프로젝트내 �
 
 ![image-20220125111437446](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220125111437446.png)
 
-
-
 [적용 후 - 프로젝트 내 검색]
 
 - 아래와 같이 더 이상 public 폴더가 검색 대상에서 제외된다.
 
 ![image-20220125111546765](https://raw.githubusercontent.com/JJuiceCode/blog.image.server/main/2022/image-20220125111546765.png)
-
-

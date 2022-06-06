@@ -7248,6 +7248,15 @@ a.post-title:hover,
   .content .notices p {
     padding: 8px 8px 8px 15px;
     margin-bottom: 0; }
+  .content .notices.qna p {
+    border-top: 30px solid #fd7e14;
+    background: #fff2e8; }
+  .content .notices.qna p::after {
+    content: 'Q & A';
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: .8rem; }
   .content .notices.word p {
     border-top: 30px solid #198754;
     background: #e8f3ee; }
@@ -7258,7 +7267,7 @@ a.post-title:hover,
     color: #fff;
     left: .8rem; }
   .content .notices.error p {
-    border-top: 30px solid #E06F6C;
+    border-top: 30px solid #842029;
     background: #fcebec; }
   .content .notices.error p::after {
     content: 'Error Issue';
